@@ -58,6 +58,10 @@ To run the Yolo Casino Delhi application, follow these steps:
 6. **Run the Docker container:**
 
    docker run -p 8080:8080 yolocasino-delhi
+
+**Access URL and endpoint - http://localhost:8080/api/v1/game/bet**
+
+**Method:- Post**
    
 ## Sample Request 
 
@@ -68,8 +72,7 @@ To run the Yolo Casino Delhi application, follow these steps:
 }
 ```
 
-Access URL and endpoint - http://localhost:8080/api/v1/game/bet
-**Method:- Post**
+
 ## Sample Response
 ```json
 {
