@@ -24,12 +24,15 @@ This project implements a betting game called Delhi for Yolo Group. Players send
 To run the Yolo Casino Delhi application, follow these steps:
 
 1. **Clone the repository**:
-     git clone https://github.com/priyanshugoyal612/YoloCasinoDelhi.git
 
-2. **Navigate to the project directory:**
-cd YoloCasinoDelhi
+    git clone https://github.com/priyanshugoyal612/YoloCasinoDelhi.git
 
-3. **Start the application:**
+3. **Navigate to the project directory:**
+  
+   cd YoloCasinoDelhi
+
+4. **Start the application:**
+
    **On Windows:**
      mvnw.cmd spring-boot:run
 
