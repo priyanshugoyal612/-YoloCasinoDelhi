@@ -32,3 +32,22 @@ cd YoloCasinoDelhi
           mvnw.cmd spring-boot:run
       **On Unix:**
           mvnw spring-boot:run
+
+
+Access URL and endpoint - http://localhost:8080/api/v1/game/bet
+
+## Sample Request 
+
+```json
+{
+    "number": 7,
+    "bet": 99
+}
+```
+## Sample Response
+```json
+{
+    "win": 105.3870967710
+}
+```
+
