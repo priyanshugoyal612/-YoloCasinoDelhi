@@ -10,10 +10,12 @@ This project implements a betting game called Delhi for Yolo Group. Players send
 - **Framework**: Spring Boot 3
 - **Build Tool**: Maven
 - **Programming Language**: Java 21
+- **Containerization**: Docker
 - **Utilities**: Lombok
 
 ## Prerequisites
 - Java Development Kit (JDK) version 21
+- Docker
 - Git
 - Maven
 
@@ -36,6 +38,19 @@ cd YoloCasinoDelhi
 
 Access URL and endpoint - http://localhost:8080/api/v1/game/bet
 
+## Running With Docker
+1.**Clone the repository:**
+     git clone https://github.com/priyanshugoyal612/YoloCasinoDelhi.git
+
+2. **Navigate to the project directory:**
+   cd YoloCasinoDelhi
+
+3. **Build the Docker image:**
+docker build -t yolocasino-delhi .
+
+4. **Run the Docker container:**
+   docker run -p 8080:8080 yolocasino-delhi
+   
 ## Sample Request 
 
 ```json
