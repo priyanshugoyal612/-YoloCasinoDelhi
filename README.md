@@ -30,25 +30,30 @@ To run the Yolo Casino Delhi application, follow these steps:
 cd YoloCasinoDelhi
 
 3. **Start the application:**
-      **On Windows:**
-          mvnw.cmd spring-boot:run
-      **On Unix:**
-          mvnw spring-boot:run
+   **On Windows:**
+     mvnw.cmd spring-boot:run
+
+   **On Unix:**
+     mvnw spring-boot:run
 
 
 Access URL and endpoint - http://localhost:8080/api/v1/game/bet
 
 ## Running With Docker
 1.**Clone the repository:**
-     git clone https://github.com/priyanshugoyal612/YoloCasinoDelhi.git
+    
+    git clone https://github.com/priyanshugoyal612/YoloCasinoDelhi.git
 
 2. **Navigate to the project directory:**
-   cd YoloCasinoDelhi
 
-3. **Build the Docker image:**
-docker build -t yolocasino-delhi .
+    cd YoloCasinoDelhi
 
-4. **Run the Docker container:**
+4. **Build the Docker image:**
+
+   docker build -t yolocasino-delhi .
+
+6. **Run the Docker container:**
+
    docker run -p 8080:8080 yolocasino-delhi
    
 ## Sample Request 
