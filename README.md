@@ -5,6 +5,7 @@ This project implements a betting game called Delhi for Yolo Group. Players send
 ## Features
 - **Random Number Generation**: Yolo Casino Delhi generates a random whole number between 1 and 100. If the player's number is greater, it calculates the win and sends it back to the player.
 - **Win Calculation**: The win is calculated using the formula: `win = bet * (99 / (100 - number))`. For example, if a player selects number 50 and bets 40.5, the win would be 80.19.
+- **RTP(Return To Player) Test**
 
 ## Technical Details
 - **Framework**: Spring Boot 3
