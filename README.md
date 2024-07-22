@@ -40,7 +40,7 @@ To run the Yolo Casino Delhi application, follow these steps:
      mvnw spring-boot:run
 
 
-Access URL and endpoint - http://localhost:8080/api/v1/game/bet
+
 
 ## Running With Docker
 1.**Clone the repository:**
@@ -67,6 +67,9 @@ Access URL and endpoint - http://localhost:8080/api/v1/game/bet
     "bet": 99
 }
 ```
+
+Access URL and endpoint - http://localhost:8080/api/v1/game/bet
+**Method:- Post**
 ## Sample Response
 ```json
 {
