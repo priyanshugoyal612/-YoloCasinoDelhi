@@ -1,5 +1,11 @@
 package com.yolo.casino.delhi.model;
 
+import static com.yolo.casino.delhi.constant.YoloConstant.BET_AMOUNT_MUST_BE_AT_LEAST_0;
+import static com.yolo.casino.delhi.constant.YoloConstant.BET_AMOUNT_MUST_NOT_BE_NULL;
+import static com.yolo.casino.delhi.constant.YoloConstant.NUMBER_MUST_BE_NO_MORE_THAN_100;
+import static com.yolo.casino.delhi.constant.YoloConstant.NUMBER_MUST_BE_AT_LEAST_1;
+import static com.yolo.casino.delhi.constant.YoloConstant.NUMBER_MUST_NOT_BE_NULL;
+
 import java.math.BigDecimal;
 
 import jakarta.validation.constraints.Max;
@@ -19,15 +25,15 @@ public class YoloBetRequest {
 	 * The number chosen by the player for the bet. Should be between 1 and 100
 	 * (inclusive).
 	 */
-	@NotNull(message = "Number must not be null.")
-	@Min(value = 1, message = "Number must be at least 1.")
-	@Max(value = 100, message = "Number must be no more than 100.")
+	@NotNull(message = NUMBER_MUST_NOT_BE_NULL)
+	@Min(value = 1, message = NUMBER_MUST_BE_AT_LEAST_1)
+	@Max(value = 100, message = NUMBER_MUST_BE_NO_MORE_THAN_100)
 	private Integer number;
 
 	/**
 	 * The amount of money the player is betting. Should be a non-negative value.
 	 */
-	@NotNull(message = "Bet amount must not be null.")
-	@Min(value = 0, message = "Bet amount must be at least 0.")
+	@NotNull(message = BET_AMOUNT_MUST_NOT_BE_NULL)
+	@Min(value = 0, message = BET_AMOUNT_MUST_BE_AT_LEAST_0)
 	private BigDecimal bet;
 }

@@ -7,11 +7,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.yolo.casino.delhi.model.YoloBetRequest;
 import com.yolo.casino.delhi.model.YoloBetResponse;
 import com.yolo.casino.delhi.service.YoloGameService;
+
 import jakarta.validation.Valid;
 import lombok.extern.log4j.Log4j2;
+import static com.yolo.casino.delhi.constant.YoloConstant.YOU_ONLY_LIVE_ONCE;
 
 /**
  * REST controller for handling Yolo game betting operations.
@@ -52,6 +55,6 @@ public class YoloGameRestController {
 	public ResponseEntity<String> yolo() {
 		log.info("Received request to the test endpoint.");
 
-		return ResponseEntity.ok("You Only Lived Once");
+		return ResponseEntity.ok(YOU_ONLY_LIVE_ONCE);
 	}
 }
